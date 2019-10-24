@@ -1,0 +1,7 @@
+.Build/
+.Index/
+# Xcode part
+xcuserdata/
+
+Pods/
+Podfile.lock
