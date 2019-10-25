@@ -4,11 +4,11 @@
 
 osx_image: xcode11.1
 language: swift
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+cache: cocoapods
+podfile: Example/Podfile
+before_install:
+- gem install cocoapods # Since Travis is not always on latest version
+- pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/RestKitUI.xcworkspace -scheme RestKitUI-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail &&  xcodebuild -enableCodeCoverage YES -workspace Example/RestKitUI.xcworkspace -scheme RestKitUI_Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.1' ONLY_ACTIVE_ARCH=NO test | xcpretty
 - pod lib lint

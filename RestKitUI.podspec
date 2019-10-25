@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RestKitUI'
-  s.version          = '0.1.1'
-  s.summary          = 'An alpha state REST Framework for iOS'
+  s.version          = '0.1.2'
+  s.summary          = 'An alpha stage REST Framework for iOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -29,8 +29,8 @@ A very early stage Framework thought to create your own REST Services Class to b
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-  s.swift_version = '5.0'
-
+  s.swift_version = ['5.0', '5.1']
+  
   s.source_files = 'RestKitUI/Classes/**/*'
   
   # s.resource_bundles = {

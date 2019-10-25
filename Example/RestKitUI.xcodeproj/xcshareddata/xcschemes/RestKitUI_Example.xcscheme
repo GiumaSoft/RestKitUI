@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+               BlueprintIdentifier = "E38CBC262361E7D70037231E"
                BuildableName = "RestKitUI_Example.app"
                BlueprintName = "RestKitUI_Example"
                ReferencedContainer = "container:RestKitUI.xcodeproj">
@@ -44,7 +44,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BlueprintIdentifier = "E38CBC262361E7D70037231E"
             BuildableName = "RestKitUI_Example.app"
             BlueprintName = "RestKitUI_Example"
             ReferencedContainer = "container:RestKitUI.xcodeproj">
@@ -64,7 +64,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -77,7 +77,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BlueprintIdentifier = "E38CBC262361E7D70037231E"
             BuildableName = "RestKitUI_Example.app"
             BlueprintName = "RestKitUI_Example"
             ReferencedContainer = "container:RestKitUI.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BlueprintIdentifier = "E38CBC262361E7D70037231E"
             BuildableName = "RestKitUI_Example.app"
             BlueprintName = "RestKitUI_Example"
             ReferencedContainer = "container:RestKitUI.xcodeproj">
