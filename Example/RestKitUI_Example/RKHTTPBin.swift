@@ -11,20 +11,12 @@ import RestKitUI
 
 enum RKHTTPBinAPI: RestAPIService {
     case testGet
-    case testPost
     
     var baseURL: String { return "https://httpbin.org/get" }
-    
-    var method: String {
-        switch self {
-        case .testGet : return "GET"
-        case .testPost : return "POST"
-        }
-    }
 }
 
 class RKHTTPBin : RestAPIClient {
-
+    
     func testGet(_ completion: @escaping (String?) -> Void) {
         
         fetch(api: RKHTTPBinAPI.testGet) { data in

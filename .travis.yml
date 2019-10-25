@@ -2,13 +2,17 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode11.1
-language: swift
+--- 
+before_install: 
+  - "gem install cocoapods"
+  - "pod install --project-directory=Example"
+branches: 
+  only: 
+    - master
 cache: cocoapods
+language: swift
+osx_image: xcode11.1
 podfile: Example/Podfile
-before_install:
-- gem install cocoapods # Since Travis is not always on latest version
-- pod install --project-directory=Example
-script:
-- set -o pipefail &&  xcodebuild -enableCodeCoverage YES -workspace Example/RestKitUI.xcworkspace -scheme RestKitUI_Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.1' ONLY_ACTIVE_ARCH=NO test | xcpretty
-- pod lib lint
+script: 
+  - "set -o pipefail &&  xcodebuild -enableCodeCoverage YES -workspace Example/RestKitUI.xcworkspace -scheme RestKitUI_Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.1' ONLY_ACTIVE_ARCH=NO test | xcpretty"
+  - "pod lib lint"

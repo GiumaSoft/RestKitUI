@@ -1,6 +1,6 @@
 # RestKitUI
 
-[![CI Status](https://img.shields.io/travis/giuseppe.mazzilli@icloud.com/RestKitUI.svg?style=flat)](https://travis-ci.org/giuseppe.mazzilli@icloud.com/RestKitUI)
+[![CI Status](https://img.shields.io/travis/GiumaSoft/RestKitUI.svg?style=flat)](https://travis-ci.com/GiumaSoft/RestKitUI)
 [![Version](https://img.shields.io/cocoapods/v/RestKitUI.svg?style=flat)](https://cocoapods.org/pods/RestKitUI)
 [![License](https://img.shields.io/cocoapods/l/RestKitUI.svg?style=flat)](https://cocoapods.org/pods/RestKitUI)
 [![Platform](https://img.shields.io/cocoapods/p/RestKitUI.svg?style=flat)](https://cocoapods.org/pods/RestKitUI)
